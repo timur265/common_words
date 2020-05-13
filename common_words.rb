@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts ARGV[0]
+file = File.open(ARGV[0])
+content = file.read
+file.close
