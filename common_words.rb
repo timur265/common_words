@@ -20,3 +20,9 @@ file.close
 
 h = get_common_words_from_string(content)
 sorted_hash = h.sort_by{ |k, v| v}
+sorted_hash.each {
+        |k, v|
+        if v > 3
+            puts "#{k}#{v}"
+        end
+    }
